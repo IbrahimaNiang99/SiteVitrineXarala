@@ -1,0 +1,303 @@
+/** NavBar*/
+/**---------------------------  SECTION 1--------------------------------- */
+
+.section1{
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.box{
+    width: 20%;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+}
+
+
+.notification {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-radius: 1px;
+  } 
+
+  .notification .badge {
+    position: absolute;
+    color: white;
+    top: 1px;
+    right: 5px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 10px;
+  }
+  
+
+.box .img{
+    width: 100%;
+    height: 250px;
+}
+
+/** Responsive */
+
+@media screen and (max-width:1200px) {
+    .box{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .box{
+        width: 90%;
+    }
+}
+.section2{
+    margin-top: 30px;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+.section2 .baniere2{
+    height: 350px;
+    width: 100%;
+}
+
+.section3{
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.item{
+    width: 30%;
+    height: auto;
+    margin: 1px;
+}
+
+.imgitem{
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+
+.section4{
+    margin-top: 40px;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+.section4 .baniere3{
+    height: 350px;
+    width: 100%;
+}
+
+.section5{
+    margin-top: 40px;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    display: flex;
+    font-size: 12px;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.text-item{
+    width: 22%;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+.text-item img{
+    width: 38%;
+    height: 50px;
+    float: left;
+}
+
+
+.section6{
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.box6{
+    width: 15%;
+    height: 180px;
+}
+
+.box6 img{
+    width: 100%;
+    height: 180px;
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    transition: .5s;
+}
+
+
+.subscribe{
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid grey;
+    float: left;
+    border-radius: 20px;
+    width: 50%;
+    background: #f1f1f1;
+  }
+
+  form.example button {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+    border-left: none;
+    cursor: pointer;
+  }
+
+.img1{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.img2{
+    width: 100%;
+    height: 145px;
+    border-radius: 5px;
+}
+
+
+#photoArray{
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-gap: .5em;
+    grid-template-areas: 
+        "tof1 tof2 tof3"
+        "tof1 tof4 tof5";
+    grid-template-columns: 1fr 20% 20%;
+}
+
+
+#photoArray>div{
+    border-radius: 5px;
+}
+
+#photoArray > div:first-child{
+    grid-area: tof1;
+    height: 300px;
+}
+
+.section7{
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 17%;
+    display: flex;
+    height: auto;
+    flex-flow: wrap;
+}
+
+.box7{
+    width: 20%;
+    height: 200px;
+    margin: 0;
+}
+
+.box7 p{
+    font-size: 10px;
+    margin-left: 5px;
+} 
+
+.box7 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.box7 .ttt{
+    margin-top: 10px;
+    display: flex;
+}
+.ttt .ti{
+    width: 100px;
+    background-color: rgba(237, 237, 237, 0.854);
+    border-radius: 50%;
+    height: 50px;
+}
+
+.ti i{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+/*------------*/
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    box-shadow: 2px 2px bisque;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+  }
+    
+  .active {
+    background-color:bisque;
+  }
+
+  /* Navbar responsive */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+hr{
+    width: 80%;
+    margin: auto;
+}
+
+.copyright{
+    
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
